@@ -1,0 +1,21 @@
+{
+    "name": "FixBlock",
+    "version": "3.0.0",
+    "manifest_version": 2,
+	  "web_accessible_resources": ["script.js"],
+	
+    "content_scripts": [
+      {
+        "js": ["contentscript.js"],
+        "matches": [
+          "http://rocket.mtchs.org/access/*",
+          "http://www.youtube.com/*&safe=active"
+        ]
+      }, {
+        "js": ["script2.js"],
+        "matches": ["http://web.archive.org/web/*"]
+      }
+    ],
+
+  "permissions": [ "activeTab" ]
+}
