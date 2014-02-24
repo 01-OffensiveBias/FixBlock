@@ -1,6 +1,6 @@
 var blocked = "";
 var url = window.location.href;
-if ( url.search( 'www.youtube.com' ) >= 0 && url.search( 'watch' ) != -1 ) {
+if ( url.search( 'www.youtube.com' ) >= 0 ) {
   blocked = 'http://www.youtube.com/' + url.substr( url.search( 'watch' ), 19 );
 } else {
   blocked = redir.url;
